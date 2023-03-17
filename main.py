@@ -1,13 +1,8 @@
 """
-
     Создать таблицу для студентов ( Id(auto_increment primary key), ФИО, пол, обучение онлайн или офлайн, группа, адрес, почта  и номер телефона),
-
     заполните эту таблицу 15 студентами
-
     напишите select отдельно для каждого поля а также select *
-
     используйте вместе c select выражение where где в номере телефона есть 2
-
 """
 
 from mysql import connector as connection
@@ -61,7 +56,8 @@ db.commit()
 #
 #
 # sql_insert = """
-#     insert into students (firstName, lastName, surname, sex, typeOfEducation, team, address, email, phoneNumber) values(%s,%s,%s,%s,%s,%s,%s,%s,%s)
+#     insert into students (firstName, lastName, surname, sex, typeOfEducation, team, address, email, phoneNumber)
+#     values(%s,%s,%s,%s,%s,%s,%s,%s,%s)
 # """
 #
 # cursor.executemany(sql_insert, values)
